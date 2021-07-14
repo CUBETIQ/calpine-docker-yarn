@@ -51,7 +51,7 @@ RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 RUN chmod +x /usr/local/bin/modprobe
 
 # Install Yarn
-RUN apk add --update --no-cache yarn
+RUN apk add --update --no-cache yarn git
 
 ENV DOCKER_TLS_CERTDIR=/certs
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client
