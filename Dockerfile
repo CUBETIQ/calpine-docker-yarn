@@ -1,6 +1,9 @@
 FROM cubetiq/calpine-os-linux:latest
 LABEL maintainer="sombochea@cubetiqs.com"
 
+# Build with root access
+USER root
+
 RUN apk add --no-cache \
 		ca-certificates \
 		openssh-client
