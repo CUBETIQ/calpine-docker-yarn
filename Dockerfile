@@ -12,6 +12,8 @@ RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
 
 ENV DOCKER_VERSION 20.10.7
 
+RUN mkdir -p /usr/local/bin
+
 RUN set -eux; \
 	\
 	apkArch="$(apk --print-arch)"; \
