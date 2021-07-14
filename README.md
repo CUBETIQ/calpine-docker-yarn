@@ -1,32 +1,31 @@
-# CUBETIQ Alpine OS Linux with Docker 20.10.7
-![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/cubetiq/calpine-docker)
-![Docker Pulls](https://img.shields.io/docker/pulls/cubetiq/calpine-docker)
+# CUBETIQ Alpine OS Linux with Docker and Yarn
+![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/cubetiq/calpine-docker-yarn)
+![Docker Pulls](https://img.shields.io/docker/pulls/cubetiq/calpine-docker-yarn)
 
 - CUBETIQ Alpine OS Linux (3.13.3)
 - Docker (20.10.7)
+- Yarn (1.22)
 
-# [Docker Hub](https://hub.docker.com/r/cubetiq/calpine-docker)
+# [Docker Hub](https://hub.docker.com/r/cubetiq/calpine-docker-yarn)
 ```shell
-docker push cubetiq/calpine-docker
+docker push cubetiq/calpine-docker-yarn
 ```
 
 # Usage
 ```shell
-docker run --rm -it cubetiq/calpine-docker /bin/sh
+docker run --rm -it cubetiq/calpine-docker-yarn /bin/sh
 ```
 
 # Example
 ```Dockerfile
-FROM cubetiq/calpine-docker:latest
+FROM cubetiq/calpine-docker-yarn:latest
 LABEL maintainer="sombochea@cubetiqs.com"
 
 RUN docker version
+RUN yarn --version
 
 CMD [ "sh" ]
 ```
-
-# Reference
-- Docker: [GitHub](https://github.com/docker-library/docker/tree/279ba9c93e8e26a15171645bd511ea8476c4706e/20.10)
 
 # Contributors
 - Sambo Chea <sombochea@cubetiqs.com>
