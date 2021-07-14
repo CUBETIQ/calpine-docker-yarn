@@ -1,9 +1,6 @@
 FROM cubetiq/calpine-os-linux:latest
 LABEL maintainer="sombochea@cubetiqs.com"
 
-WORKDIR /github/workspace
-VOLUME ["/github/workspace"]
-
 # Build with root access
 USER root
 
