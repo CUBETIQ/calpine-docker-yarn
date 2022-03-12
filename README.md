@@ -4,7 +4,7 @@
 
 - CUBETIQ Alpine OS Linux (3.13.3)
 - Docker (20.10.7)
-- Yarn (1.22)
+- Yarn (1.22.17)
 
 # [Docker Hub](https://hub.docker.com/r/cubetiq/calpine-docker-yarn)
 ```shell
